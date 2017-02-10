@@ -14,7 +14,7 @@ namespace TechReviewMVC.Models
         public string Device { get; set ; }
         public string Description { get; set; }
         public string FullDescription { get; set; }
-        public int Price { get; set; }
+        public string Price { get; set; }
         public DateTime ManufactureDate { get; set; }
 
         [ForeignKey("Category")]

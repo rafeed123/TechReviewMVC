@@ -161,6 +161,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702101832521_InitialCreate.cs" />
+    <Compile Include="Migrations\201702101832521_InitialCreate.Designer.cs">
+      <DependentUpon>201702101832521_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702101907481_changed price from int to double.cs" />
+    <Compile Include="Migrations\201702101907481_changed price from int to double.Designer.cs">
+      <DependentUpon>201702101907481_changed price from int to double.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702101919270_changing price from double to string.cs" />
+    <Compile Include="Migrations\201702101919270_changing price from double to string.Designer.cs">
+      <DependentUpon>201702101919270_changing price from double to string.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\TechReviewMVCContext.cs" />
@@ -237,6 +250,17 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702101832521_InitialCreate.resx">
+      <DependentUpon>201702101832521_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101907481_changed price from int to double.resx">
+      <DependentUpon>201702101907481_changed price from int to double.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702101919270_changing price from double to string.resx">
+      <DependentUpon>201702101919270_changing price from double to string.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
