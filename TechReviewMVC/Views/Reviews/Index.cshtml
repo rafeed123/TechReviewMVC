@@ -4,16 +4,32 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Gadget Reviews</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add Review", "Create")
 </p>
-<table class="table">
+@foreach (var item in Model)
+{
+<div class="row">
+    <div class="col-sm-12">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>@Html.DisplayFor(modelItem => item.Device)</h3>
+                <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                <p><span class="label label-danger">Price</span> &nbsp;<strong>@Html.DisplayFor(modelItem => item.Price)</strong></p>
+                <p><span class="label label-danger">Manufacturer</span> &nbsp;<strong>@Html.DisplayFor(modelItem => item.Category.Manufacturer)</strong></p>
+                <p>@Html.DisplayNameFor(model => model.ManufactureDate)</p>
+                <p>@Html.DisplayFor(modelItem => item.ManufactureDate)</p>
+                <p>@Html.ActionLink("Details", "Details", new { id = item.ID })</p>
+            </div>
+        </div>
+    </div>  
+</div>
+}
+@*<table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Manufacturer)
-        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.Device)
         </th>
@@ -21,10 +37,10 @@
             @Html.DisplayNameFor(model => model.Description)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FullDescription)
+            @Html.DisplayNameFor(model => model.Price)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Price)
+            @Html.DisplayNameFor(model => model.Category.Manufacturer)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ManufactureDate)
@@ -34,9 +50,7 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Manufacturer)
-        </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.Device)
         </td>
@@ -44,10 +58,10 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.FullDescription)
+            @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Price)
+            @Html.DisplayFor(modelItem => item.Category.Manufacturer)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ManufactureDate)
@@ -60,4 +74,4 @@
     </tr>
 }
 
-</table>
+</table>*@

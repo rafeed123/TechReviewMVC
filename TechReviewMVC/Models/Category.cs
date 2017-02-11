@@ -8,6 +8,7 @@ namespace TechReviewMVC.Models
 {
     public class Category
     {
+        //Category class is set up so user can choose a manufacturer    
         [Key]
         public int ID { get; set; }
         public string Manufacturer { get; set; }

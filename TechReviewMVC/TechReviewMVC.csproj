@@ -184,6 +184,11 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\Cold Gun blueprint.jpg" />
+    <Content Include="Content\images\Cold Hun.png" />
+    <Content Include="Content\images\DC_Versus_Marvel_1.jpg" />
+    <Content Include="Content\images\Kryptonite-Gauntlets.jpg" />
+    <Content Include="Content\images\Remote-Batarang.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
