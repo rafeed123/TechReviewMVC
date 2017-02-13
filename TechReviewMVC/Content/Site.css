@@ -4,10 +4,32 @@
     background-image: url('images/DC_Versus_Marvel_1.jpg');
 }
 
+.thumbnail {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.item-device{
+font-family: 'Pangolin', cursive;
+
+}
+.details-page{
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Pangolin', cursive;
+}
+
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.Review-header {
+    color: black;
+    font-family: 'Pangolin', cursive;
+}
+
+.well-sm {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -23,7 +45,3 @@ select,
 textarea {
     max-width: 280px;
 }
-
-
-
-
